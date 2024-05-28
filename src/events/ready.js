@@ -3,6 +3,6 @@ module.exports = {
     run: async (client) => {
         const allCommands = await client.slashCommands.map(c => c);
         await client.application.commands.set(allCommands);
-        console.log('[CLEVE] Ready to chat!');
+        console.log('[API] Ready to chat!');
     }
 };
