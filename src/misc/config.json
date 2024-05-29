@@ -3,7 +3,7 @@
   "activity": {
     "activities": [
       {
-        "name": "/setchannel <#channel-name>",
+        "name": "/setchannel #channel-name",
         "type": 0
       }
     ],
