@@ -45,7 +45,7 @@ const loadModules = async (client) => {
                 }
             }
         }
-        console.log(`[CLEVE] Loaded ${Array.from(client.slashCommands).length} commands`);
+        console.log(`[API] Loaded ${Array.from(client.slashCommands).length} commands`);
         return true;
     } catch (e) {
         console.log(`[ERROR] Loading modules: \n${e.stack}`);;
@@ -101,7 +101,7 @@ const updateConfig = (client) => {
         configFileData['misc'] = client.misc;
         writeFile('./misc/config.json', JSON.stringify(configFileData, null, 2), (err) => {
             if (err) return console.log('[ERR] Updating configuration: \n' + err);
-            console.log('[CLEVE] Updated configuration file');
+            console.log('[API] Updated configuration file');
         });
     }
 };
