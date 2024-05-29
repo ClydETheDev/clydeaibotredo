@@ -36,6 +36,7 @@ client.misc = misc;
         console.log('[CLEVE] Unable to connect: \n' + err);
         return process.exit(1)
     });
+    require('./lavalinkManager')(client); // Load Lavalink manager
 })();
 
 process.on('unhandledRejection', (reason, promise) => {
